@@ -90,9 +90,21 @@ int partition (int v[], int N, int x){
         if(v[i]<=x)i++;
         else{swapV(v,i,j);j--;}
     }
-    if (i==N-1) i=N;
+    if(v[i]<=x)i++; //acertar a fronteira
     return i;
 }
+
+int partition(int v[], int N,int x){
+    int r=0,i;
+    for(i=0;i<N;i++){
+        if(v[i]<=x){
+            swap(v,i,r);
+            r++;
+        }
+    }
+    return r;
+}
+
 
 int main()
 {

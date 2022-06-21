@@ -366,8 +366,6 @@ LInt parte (LInt l){
     return y;
 }
 
-
-
 int main()
 {
     int c;

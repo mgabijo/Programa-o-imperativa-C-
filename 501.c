@@ -490,7 +490,7 @@ void somasAc (int v[], int Ac [], int N){
     }
 }
 
-//39
+//39 - rever
 int triSup(int N, float m[N][N]){
     int l,c, r=1;
     for(l=0; l<N; l++){
